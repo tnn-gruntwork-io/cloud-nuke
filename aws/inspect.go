@@ -3,10 +3,10 @@ package aws
 import (
 	"fmt"
 
-	"github.com/gruntwork-io/cloud-nuke/config"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/ui"
-	"github.com/gruntwork-io/go-commons/collections"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/ui"
+	"github.com/tnn-gruntwork-io/go-commons/collections"
 )
 
 // ExtractResourcesForPrinting is a convenience method that converts the nested structure of AwsAccountResources

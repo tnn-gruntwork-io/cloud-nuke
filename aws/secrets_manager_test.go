@@ -2,23 +2,23 @@ package aws
 
 import (
 	"fmt"
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/go-commons/collections"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/go-commons/collections"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/secretsmanager"
-	"github.com/gruntwork-io/cloud-nuke/config"
-	terraws "github.com/gruntwork-io/terratest/modules/aws"
-	"github.com/gruntwork-io/terratest/modules/random"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	terraws "github.com/tnn-gruntwork-io/terratest/modules/aws"
+	"github.com/tnn-gruntwork-io/terratest/modules/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/go-commons/retry"
+	"github.com/tnn-gruntwork-io/go-commons/retry"
 )
 
 func TestListSecretsManagerSecrets(t *testing.T) {
@@ -162,7 +162,7 @@ func createSecretStringWithDefaultKey(t *testing.T, awsRegion string, name strin
 	secretVal := random.UniqueId()
 	arn := terraws.CreateSecretStringWithDefaultKey(t, awsRegion, description, name, secretVal)
 	// Check if created secret is available by checking secret ARN in list of all secrets
-	// https://github.com/gruntwork-io/cloud-nuke/issues/227
+	// https://github.com/tnn-gruntwork-io/cloud-nuke/issues/227
 	awsSession, err := session.NewSession(&aws.Config{Region: aws.String(awsRegion)})
 	require.NoError(t, err)
 	err = retry.DoWithRetry(
@@ -192,7 +192,7 @@ func createSecretStringReplicaWithDefaultKey(t *testing.T, awsRegion string, nam
 	secretVal := random.UniqueId()
 	arn := terraws.CreateSecretStringWithDefaultKey(t, awsRegion, description, name, secretVal)
 	// Check if created secret is available by checking secret ARN in list of all secrets
-	// https://github.com/gruntwork-io/cloud-nuke/issues/227
+	// https://github.com/tnn-gruntwork-io/cloud-nuke/issues/227
 	awsSession, err := session.NewSession(&aws.Config{Region: aws.String(awsRegion)})
 	require.NoError(t, err)
 

@@ -1,8 +1,8 @@
 package aws
 
 import (
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
-	commonTelemetry "github.com/gruntwork-io/go-commons/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
+	commonTelemetry "github.com/tnn-gruntwork-io/go-commons/telemetry"
 	"strconv"
 	"time"
 
@@ -10,9 +10,9 @@ import (
 	awsgo "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/sqs"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/report"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/report"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 )
 
 // Returns a formatted string of SQS Queue URLs

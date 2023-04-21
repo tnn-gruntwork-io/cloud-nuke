@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
 
 	"github.com/stretchr/testify/require"
 )

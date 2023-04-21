@@ -3,7 +3,7 @@ package aws
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
 	"io/ioutil"
 	"os"
 	"path"
@@ -16,9 +16,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
-	"github.com/gruntwork-io/cloud-nuke/config"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/util"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/util"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -370,7 +370,7 @@ func testNukeS3Bucket(t *testing.T, args TestNukeS3BucketArgs) {
 	// Don't remove this.
 	// It ensures that all S3 buckets created as part of this test will be nuked after the test has run.
 	// This is necessary, as some test cases are expected to fail & test that the buckets with invalid args are not nuked.
-	// For more details, look at Github issue-140: https://github.com/gruntwork-io/cloud-nuke/issues/140
+	// For more details, look at Github issue-140: https://github.com/tnn-gruntwork-io/cloud-nuke/issues/140
 	defer nukeAllS3Buckets(awsParams.awsSession, []*string{aws.String(bucketName)}, 1000)
 
 	// Nuke the test bucket
@@ -609,7 +609,7 @@ func TestFilterS3Bucket_Config(t *testing.T) {
 				configFilePath: readTemplate(t, "../config/mocks/s3_exclude_names.yaml", map[string]string{"__TESTID__": testId}),
 				matches:        excludeBuckets,
 				// exclude match may include multiple buckets than created during test
-				// https://github.com/gruntwork-io/cloud-nuke/issues/142
+				// https://github.com/tnn-gruntwork-io/cloud-nuke/issues/142
 				exactMatch: false,
 			},
 		},

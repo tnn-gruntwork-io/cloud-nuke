@@ -2,18 +2,18 @@ package aws
 
 import (
 	"fmt"
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
-	commonTelemetry "github.com/gruntwork-io/go-commons/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
+	commonTelemetry "github.com/tnn-gruntwork-io/go-commons/telemetry"
 	"sync"
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/acmpca"
-	"github.com/gruntwork-io/cloud-nuke/config"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/report"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/report"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 	"github.com/hashicorp/go-multierror"
 )
 

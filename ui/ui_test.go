@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/cloud-nuke/report"
+	"github.com/tnn-gruntwork-io/cloud-nuke/report"
 	"github.com/pterm/pterm"
 	"github.com/stretchr/testify/require"
 )

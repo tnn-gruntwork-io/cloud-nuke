@@ -1,7 +1,7 @@
 package telemetry
 
 import (
-	"github.com/gruntwork-io/go-commons/telemetry"
+	"github.com/tnn-gruntwork-io/go-commons/telemetry"
 	"os"
 	"strings"
 )

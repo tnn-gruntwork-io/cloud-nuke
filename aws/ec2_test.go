@@ -3,7 +3,7 @@ package aws
 import (
 	"errors"
 	"fmt"
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
 	"regexp"
 	"testing"
 	"time"
@@ -11,10 +11,10 @@ import (
 	awsgo "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/gruntwork-io/cloud-nuke/config"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/util"
-	gruntworkerrors "github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/util"
+	gruntworkerrors "github.com/tnn-gruntwork-io/go-commons/errors"
 	"github.com/stretchr/testify/assert"
 )
 

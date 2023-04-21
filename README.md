@@ -78,14 +78,14 @@ When executed as `cloud-nuke defaults-aws`, this tool deletes all DEFAULT VPCs a
 
 ### Download from releases page
 
-1. Download the latest binary for your OS on the [releases page](https://github.com/gruntwork-io/cloud-nuke/releases).
+1. Download the latest binary for your OS on the [releases page](https://github.com/tnn-gruntwork-io/cloud-nuke/releases).
 2. Move the binary to a folder on your `PATH`. E.g.: `mv cloud-nuke_darwin_amd64 /usr/local/bin/cloud-nuke`.
 3. Add execute permissions to the binary. E.g.: `chmod u+x /usr/local/bin/cloud-nuke`.
 4. Test it installed correctly: `cloud-nuke --help`.
 
 ### Install via package manager
 
-Note that package managers are third party. The third party cloud-nuke packages may not be updated with the latest version, but are often close. Please check your version against the latest available on the [releases page](https://github.com/gruntwork-io/cloud-nuke/releases). If you want the latest version, the recommended installation option is to [download from the releases page](https://github.com/gruntwork-io/cloud-nuke/releases).
+Note that package managers are third party. The third party cloud-nuke packages may not be updated with the latest version, but are often close. Please check your version against the latest available on the [releases page](https://github.com/tnn-gruntwork-io/cloud-nuke/releases). If you want the latest version, the recommended installation option is to [download from the releases page](https://github.com/tnn-gruntwork-io/cloud-nuke/releases).
 
 - **macOS:** You can install cloud-nuke using [Homebrew](https://brew.sh/): `brew install cloud-nuke`.
 
@@ -243,8 +243,8 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws"
-	nuke_aws "github.com/gruntwork-io/cloud-nuke/aws"
-	"github.com/gruntwork-io/cloud-nuke/externalcreds"
+	nuke_aws "github.com/tnn-gruntwork-io/cloud-nuke/aws"
+	"github.com/tnn-gruntwork-io/cloud-nuke/externalcreds"
 )
 
 func main() {
@@ -717,7 +717,7 @@ Therefore please mark your release as backward incompatible and bump the **minor
 support for nuking new resources, so that we provide better signals for users when we introduce a new resource.
 
 #### To release a new version
-Go to the [Releases Page](https://github.com/gruntwork-io/cloud-nuke/releases) and create a new release. The CircleCI job for this repo has been configured to:
+Go to the [Releases Page](https://github.com/tnn-gruntwork-io/cloud-nuke/releases) and create a new release. The CircleCI job for this repo has been configured to:
 
 1. Automatically detect new tags.
 1. Build binaries for every OS using that tag as a version number.

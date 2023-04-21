@@ -30,7 +30,7 @@ package aws
 //
 // The other reason we only test in us-east-1 is to avoid conflict with our Macie test in the CIS service catalog, which uses
 // these same two accounts for similar purposes, but in EU regions.
-// See: https://github.com/gruntwork-io/terraform-aws-cis-service-catalog/blob/master/test/security/macie_test.go
+// See: https://github.com/tnn-gruntwork-io/terraform-aws-cis-service-catalog/blob/master/test/security/macie_test.go
 //func acceptTestInvite(t *testing.T, session *session.Session) {
 //	svc := macie2.New(session)
 //

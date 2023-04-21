@@ -1,16 +1,16 @@
 package aws
 
 import (
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
 	"sync"
 	"testing"
 	"time"
 
 	awsgo "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/gruntwork-io/cloud-nuke/config"
-	"github.com/gruntwork-io/cloud-nuke/util"
-	"github.com/gruntwork-io/terratest/modules/logger"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/util"
+	"github.com/tnn-gruntwork-io/terratest/modules/logger"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/cloud-nuke/aws"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/cloud-nuke/aws"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 	"github.com/stretchr/testify/assert"
 )
 
