@@ -2,16 +2,16 @@ package aws
 
 import (
 	goerror "errors"
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
-	commonTelemetry "github.com/gruntwork-io/go-commons/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
+	commonTelemetry "github.com/tnn-gruntwork-io/go-commons/telemetry"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/macie2"
 	"github.com/aws/aws-sdk-go/service/sts"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/report"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/report"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 )
 
 // getAllMacieMemberAccounts will find and return any Macie accounts that were created via accepting an invite from another AWS Account

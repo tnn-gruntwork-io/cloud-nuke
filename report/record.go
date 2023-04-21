@@ -3,7 +3,7 @@ package report
 import (
 	"sync"
 
-	"github.com/gruntwork-io/cloud-nuke/progressbar"
+	"github.com/tnn-gruntwork-io/cloud-nuke/progressbar"
 )
 
 var m = &sync.Mutex{}

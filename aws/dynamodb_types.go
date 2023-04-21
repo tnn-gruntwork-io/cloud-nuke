@@ -3,7 +3,7 @@ package aws
 import (
 	awsgo "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/gruntwork-io/gruntwork-cli/errors"
+	"github.com/tnn-gruntwork-io/gruntwork-cli/errors"
 )
 
 type DynamoDB struct {

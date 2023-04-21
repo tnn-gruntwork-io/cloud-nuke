@@ -10,8 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/aws/aws-sdk-go/service/eks"
 	"github.com/aws/aws-sdk-go/service/iam"
-	gruntworkerrors "github.com/gruntwork-io/go-commons/errors"
-	terraws "github.com/gruntwork-io/terratest/modules/aws"
+	gruntworkerrors "github.com/tnn-gruntwork-io/go-commons/errors"
+	terraws "github.com/tnn-gruntwork-io/terratest/modules/aws"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

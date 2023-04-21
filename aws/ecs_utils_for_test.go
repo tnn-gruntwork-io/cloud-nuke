@@ -8,20 +8,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
 
 	awsgo "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/aws/aws-sdk-go/service/ecs"
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/gruntwork-io/go-commons/collections"
-	gruntworkerrors "github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terratest/modules/retry"
+	"github.com/tnn-gruntwork-io/go-commons/collections"
+	gruntworkerrors "github.com/tnn-gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/terratest/modules/retry"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
 )
 
 // We black list us-east-1e because this zone is frequently out of capacity

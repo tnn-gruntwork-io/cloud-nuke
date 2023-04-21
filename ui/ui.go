@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/progressbar"
-	"github.com/gruntwork-io/cloud-nuke/report"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/progressbar"
+	"github.com/tnn-gruntwork-io/cloud-nuke/report"
 	"github.com/pterm/pterm"
 )
 

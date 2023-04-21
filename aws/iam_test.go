@@ -8,7 +8,7 @@ import (
 	"crypto/x509/pkix"
 	"encoding/pem"
 	"fmt"
-	"github.com/gruntwork-io/cloud-nuke/telemetry"
+	"github.com/tnn-gruntwork-io/cloud-nuke/telemetry"
 	"math/big"
 	mathRand "math/rand"
 	"net"
@@ -16,15 +16,15 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/gruntwork-io/go-commons/retry"
+	"github.com/tnn-gruntwork-io/go-commons/retry"
 
 	"github.com/aws/aws-sdk-go/aws"
 	awsgo "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/gruntwork-io/cloud-nuke/config"
-	"github.com/gruntwork-io/cloud-nuke/logging"
-	"github.com/gruntwork-io/cloud-nuke/util"
+	"github.com/tnn-gruntwork-io/cloud-nuke/config"
+	"github.com/tnn-gruntwork-io/cloud-nuke/logging"
+	"github.com/tnn-gruntwork-io/cloud-nuke/util"
 	"github.com/pquerna/otp/totp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -385,7 +385,7 @@ func createFullTestUser(t *testing.T, session *session.Session) (*userInfos, err
 		30*time.Second,
 		func() error {
 			// verify if profile is ready by sending update request and checking if update error is returned
-			// https://github.com/gruntwork-io/cloud-nuke/issues/227
+			// https://github.com/tnn-gruntwork-io/cloud-nuke/issues/227
 			_, err = svc.UpdateLoginProfile(&iam.UpdateLoginProfileInput{
 				PasswordResetRequired: aws.Bool(true),
 				UserName:              aws.String(userName),
